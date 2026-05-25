@@ -157,35 +157,6 @@ section{padding:96px 72px;max-width:960px}
 .act{font-family:'Syne',sans-serif;font-size:14.5px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.35}
 .acb{font-size:13px;color:var(--text2);line-height:1.65}
 
-/* CERTIFICATIONS */
-.crtg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-.crtc{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;display:flex;align-items:center;gap:14px;transition:all .2s}
-.crtc:hover{border-color:rgba(167,139,250,.3)}
-.crti{font-size:26px}
-.crtn{font-size:13px;font-weight:600;color:var(--text);line-height:1.3}
-.crtby{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--violet);margin-top:3px}
-.note{margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text2)}
-
-/* BLOG */
-.blgg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
-.blgc{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;transition:all .3s}
-.blgc:hover{border-color:rgba(255,179,71,.3);transform:translateY(-4px);box-shadow:var(--shadow)}
-.blgcat{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--amber);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
-.blgt{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--text);margin-bottom:10px;line-height:1.4}
-.blge{font-size:13px;color:var(--text2);line-height:1.65;flex:1;margin-bottom:16px}
-.blgf{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--text2);display:flex;justify-content:space-between}
-
-/* TESTIMONIALS */
-.tsg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
-.tsc{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:26px;transition:all .2s}
-.tsc:hover{border-color:rgba(167,139,250,.25)}
-.tsq{font-size:13.5px;color:var(--text2);line-height:1.75;font-style:italic;margin-bottom:20px;position:relative;padding-left:18px}
-.tsq::before{content:'"';position:absolute;left:0;top:-4px;font-size:36px;color:var(--violet);line-height:1;font-style:normal;font-family:'Syne',sans-serif}
-.tsp{display:flex;align-items:center;gap:12px}
-.tsav{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--violet));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#050c1a;flex-shrink:0}
-.tsn{font-size:13.5px;font-weight:600;color:var(--text)}
-.tsr{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text2);margin-top:2px}
-
 /* CONTACT */
 #contact{max-width:100%;display:flex;align-items:center;min-height:60vh}
 .ci{max-width:620px}
@@ -246,10 +217,7 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
     <a href="#skills"><span class="n">04</span>Skills</a>
     <a href="#education"><span class="n">05</span>Education</a>
     <a href="#achievements"><span class="n">06</span>Achievements</a>
-    <a href="#certifications"><span class="n">07</span>Certifications</a>
-    <a href="#blog"><span class="n">08</span>Blog</a>
-    <a href="#testimonials"><span class="n">09</span>Testimonials</a>
-    <a href="#contact"><span class="n">10</span>Contact</a>
+    <a href="#contact"><span class="n">07</span>Contact</a>
   </nav>
   <div class="sb-foot">
     <button class="theme-btn" id="tb"><span id="ti">☀️</span><span id="tl">Light Mode</span></button>
@@ -289,7 +257,7 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
   <div class="sh rv"><span class="num">01.</span><h2>About Me</h2><hr></div>
   <div class="ag">
     <div class="at rv">
-      <p>Hey! I'm Adi, a Data Scientist and ML Engineer based in Houston, TX. I build intelligent systems that turn raw data into real-world impact — from RAG pipelines and LLM fine-tuning to production-grade ML APIs.</p>
+      <p>Hey! I'm Adi, a Data Scientist and ML Engineer based in Houston, TX. I build intelligent systems that turn raw data into real-world impact, from RAG pipelines and LLM fine-tuning to production-grade ML APIs.</p>
       <p>Finishing my <strong>MS in Data Science at the University of Houston</strong> (GPA 3.89), I've worked on federally-funded NSF research, taught ML to <strong>120+ graduate students</strong>, and shipped agentic AI that ranked <strong>4th globally</strong> at the ODSC AI &amp; Google Cloud Hackathon.</p>
       <p>Actively looking for full-time roles as a <strong>Data Scientist</strong>, <strong>Data Analyst</strong>, or <strong>AI/ML Engineer</strong>.</p>
       <ul class="tl">
@@ -312,39 +280,39 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
   <div class="sh rv"><span class="num">02.</span><h2>Experience</h2><hr></div>
   <div class="ew rv">
     <div class="et">
-      <button class="etb on" data-p="nsf">NSF Intern</button>
-      <button class="etb" data-p="uh">UH Teaching</button>
+      <button class="etb on" data-p="uh">UH Research</button>
+      <button class="etb" data-p="nsf">NSF Intern</button>
       <button class="etb" data-p="cor">Corizo</button>
     </div>
     <div>
-      <div class="ep on" id="p-nsf">
-        <div class="er">Data Science Intern</div>
-        <div class="eco">@ NSF Data Science for Energy Transition</div>
-        <div class="edt">📅 May 2025 – Jun 2025 &nbsp;|&nbsp; 📍 Houston, TX</div>
-        <ul class="el">
-          <li>Engineered ML pipelines using PCA, Random Forest, and XGBoost for geological facies classification on <strong>50K+ samples</strong>, achieving <strong>80.24% accuracy</strong> — 7% above baseline.</li>
-          <li>Built interactive Tableau dashboards and QGIS visualizations synthesizing multi-source subsurface data, informing NSF energy research investment decisions.</li>
-          <li>Automated data preprocessing with pandas/NumPy, reducing pipeline execution time by <strong>35%</strong>.</li>
-        </ul>
-      </div>
-      <div class="ep" id="p-uh">
-        <div class="er">Graduate Teaching Assistant</div>
-        <div class="eco">@ University of Houston</div>
+      <div class="ep on" id="p-uh">
+        <div class="er">Research Assistant, Machine Learning &amp; AI</div>
+        <div class="eco">@ University of Houston (Petroleum Industry Partnership)</div>
         <div class="edt">📅 Jan 2025 – Present &nbsp;|&nbsp; 📍 Houston, TX</div>
         <ul class="el">
-          <li>Designed and graded ML/data analytics assignments for <strong>120+ graduate students</strong>, enforcing reproducibility across Python-based pipelines.</li>
-          <li>Built automated grading scripts, reducing manual evaluation time by <strong>40%</strong> across 15+ weekly submissions.</li>
-          <li>Mentored students on end-to-end ML workflows: preprocessing, feature engineering, model selection, and hyperparameter tuning.</li>
+          <li>Architected and deployed end-to-end ML models for subsurface analytics and resource optimization, leveraging <strong>Databricks</strong> and <strong>SQL Server</strong> for large-scale data processing.</li>
+          <li>Automated data validation and model evaluation pipelines using Python, standardizing output evaluation and reducing turnaround time by <strong>40%</strong> across concurrent workflows.</li>
+          <li>Designed scalable <strong>RAG architectures</strong> and vector databases (ChromaDB) to query technical documentation, orchestrating agentic workflows via <strong>FastAPI</strong> and LLMs.</li>
+          <li>Mentored <strong>120+ graduate students</strong> on end-to-end ML workflows including preprocessing, feature engineering, model selection, and hyperparameter tuning.</li>
+        </ul>
+      </div>
+      <div class="ep" id="p-nsf">
+        <div class="er">Data Science Intern, Geospatial ML</div>
+        <div class="eco">@ NSF Data Science for Energy Transition, University of Houston</div>
+        <div class="edt">📅 May 2025 – Jun 2025 &nbsp;|&nbsp; 📍 Houston, TX</div>
+        <ul class="el">
+          <li>Trained classification pipeline (PCA, Random Forest, XGBoost) on <strong>50,000+ geological survey records</strong>, reaching <strong>80.24% accuracy</strong>, a 7% lift over the logistic regression baseline.</li>
+          <li>Built interactive <strong>Tableau and QGIS dashboards</strong> for NSF stakeholders, rewrote slow joins in Python (pandas, NumPy) cutting pipeline runtime by <strong>35%</strong>.</li>
         </ul>
       </div>
       <div class="ep" id="p-cor">
-        <div class="er">Data Analyst</div>
+        <div class="er">Data Analyst, ETL and BI</div>
         <div class="eco">@ Corizo Edutech</div>
         <div class="edt">📅 Apr 2023 – May 2024 &nbsp;|&nbsp; 📍 Bengaluru, India</div>
         <ul class="el">
-          <li>Automated ETL and feature engineering pipelines across <strong>15,000+ records</strong>, reducing manual preprocessing time by <strong>60%</strong>.</li>
-          <li>Built classification/regression models (Random Forest, XGBoost) with GridSearchCV tuning, boosting prediction accuracy by <strong>12%</strong>.</li>
-          <li>Wrote complex SQL queries to extract and join multi-table datasets for A/B testing and cross-functional reporting.</li>
+          <li>Built Python and SQL ETL pipelines moving <strong>1M+ records into Azure Data Lake</strong> and downstream analytics warehouses, cut runtime by <strong>60%</strong> and stabilized reporting.</li>
+          <li>Trained XGBoost and Random Forest models for customer segmentation, reaching <strong>89% accuracy</strong> and <strong>0.91 ROC-AUC</strong>, a 12% lift over the prior baseline used in production targeting.</li>
+          <li>Shipped <strong>Power BI dashboards</strong> covering 8 KPIs across 3 business units, adopted weekly by leadership.</li>
         </ul>
       </div>
     </div>
@@ -362,38 +330,44 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
   </div>
   <div class="pg">
     <div class="pc2 rv" data-cat="llm">
-      <div class="ph"><span class="pi">📁</span><div class="pls"><a href="https://github.com/HagTheDon/ShopperAI" target="_blank" class="pl">↗</a></div></div>
+      <div class="ph"><span class="pi">🧬</span><div class="pls"><a href="https://github.com/adikarthikeya2003/RareDx-Agentic-Diagnostic-Assistant" target="_blank" class="pl">↗</a></div></div>
+      <div class="pn">RareDx — Agentic Diagnostic Assistant</div>
+      <p class="pd">Graph-grounded agentic system for rare disease triage. Top-1 accuracy 10% → 92.5%, Recall@5 22.5% → 100% on a 40-case benchmark. Ablations across 7 retrieval strategies (280 evaluations). Brier 0.068, ECE 0.051. Evidence-only outputs.</p>
+      <div class="pst"><span class="ptg">LangGraph</span><span class="ptg">Neo4j</span><span class="ptg">ChromaDB</span><span class="ptg">BioLORD</span><span class="ptg">Groq</span><span class="ptg">Streamlit</span><span class="ptg">Docker</span></div>
+    </div>
+    <div class="pc2 rv d1" data-cat="llm">
+      <div class="ph"><span class="pi">🛍️</span><div class="pls"><a href="https://github.com/adikarthikeya2003/ShopperAI" target="_blank" class="pl">↗</a></div></div>
       <span class="paw">🏆 4th Place — ODSC Global Hackathon</span>
       <div class="pn">ShopperAI — Agentic AI Shopping Assistant</div>
-      <p class="pd">Production-grade agentic AI with deterministic, stage-based workflows for product discovery and virtual try-on. Deployed on GCP Cloud Run. Cut hallucinated outputs by 30%, improved recommendation relevance by 25%.</p>
-      <div class="pst"><span class="ptg">Python</span><span class="ptg">Google ADK</span><span class="ptg">Gemini API</span><span class="ptg">GCP</span><span class="ptg">Docker</span></div>
-    </div>
-    <div class="pc2 rv d1" data-cat="ml">
-      <div class="ph"><span class="pi">📁</span><div class="pls"><a href="https://github.com/adikarthikeya2003" target="_blank" class="pl">↗</a></div></div>
-      <div class="pn">Real-Time Customer Churn Prediction Pipeline</div>
-      <p class="pd">End-to-end ML pipeline (XGBoost + LightGBM) achieving ROC-AUC 0.87 and 83.2% accuracy on 50K+ records. Deployed as Streamlit app with Docker + MLflow tracking and SHAP-based explainability.</p>
-      <div class="pst"><span class="ptg">XGBoost</span><span class="ptg">MLflow</span><span class="ptg">Docker</span><span class="ptg">SHAP</span><span class="ptg">Streamlit</span></div>
+      <p class="pd">Production-grade agentic AI with deterministic, stage-based workflows for product discovery and virtual try-on. Deployed on GCP Cloud Run. Ranked 4th globally out of ~200 teams at the ODSC AI &amp; Google Cloud Agentic AI Hackathon.</p>
+      <div class="pst"><span class="ptg">Python</span><span class="ptg">Google ADK</span><span class="ptg">Gemini API</span><span class="ptg">GCP</span><span class="ptg">FastAPI</span><span class="ptg">Docker</span></div>
     </div>
     <div class="pc2 rv d2" data-cat="llm">
-      <div class="ph"><span class="pi">📁</span><div class="pls"><a href="https://github.com/adikarthikeya2003" target="_blank" class="pl">↗</a></div></div>
+      <div class="ph"><span class="pi">📁</span><div class="pls"></div></div>
       <div class="pn">RAG-Powered Document Intelligence System</div>
       <p class="pd">Production-ready RAG pipeline processing 1,000+ documents with 92% retrieval accuracy. FastAPI backend under 500ms response time and 99.5% uptime. RAGAS evaluation improved retrieval by 18%.</p>
       <div class="pst"><span class="ptg">LangChain</span><span class="ptg">ChromaDB</span><span class="ptg">FastAPI</span><span class="ptg">SBERT</span><span class="ptg">Docker</span></div>
     </div>
-    <div class="pc2 rv" data-cat="nlp">
-      <div class="ph"><span class="pi">📁</span><div class="pls"><a href="https://github.com/adikarthikeya2003" target="_blank" class="pl">↗</a></div></div>
+    <div class="pc2 rv" data-cat="ml">
+      <div class="ph"><span class="pi">📊</span><div class="pls"><a href="https://github.com/adikarthikeya2003/Customer_Churn_Prediction_project" target="_blank" class="pl">↗</a></div></div>
+      <div class="pn">Real-Time Customer Churn Prediction Pipeline</div>
+      <p class="pd">End-to-end ML pipeline (XGBoost + LightGBM) achieving ROC-AUC 0.87 and 83.2% accuracy on 50K+ records. Deployed as Streamlit app with Docker + MLflow tracking and SHAP-based explainability.</p>
+      <div class="pst"><span class="ptg">XGBoost</span><span class="ptg">MLflow</span><span class="ptg">Docker</span><span class="ptg">SHAP</span><span class="ptg">Streamlit</span></div>
+    </div>
+    <div class="pc2 rv d1" data-cat="nlp">
+      <div class="ph"><span class="pi">💬</span><div class="pls"><a href="https://github.com/adikarthikeya2003/Transformer-Based-Question-Answering-System" target="_blank" class="pl">↗</a></div></div>
       <div class="pn">Transformer-Based QA System</div>
       <p class="pd">Fine-tuned BERT, RoBERTa, DeBERTa, and Flan-T5 on SQuAD v2.0, achieving up to 92.3% answerability accuracy. Benchmarked across Exact Match, F1, and BERTScore.</p>
       <div class="pst"><span class="ptg">PyTorch</span><span class="ptg">HuggingFace</span><span class="ptg">BERT</span><span class="ptg">RoBERTa</span><span class="ptg">SQuAD</span></div>
     </div>
-    <div class="pc2 rv d1" data-cat="nlp">
-      <div class="ph"><span class="pi">📁</span><div class="pls"><a href="https://github.com/adikarthikeya2003" target="_blank" class="pl">↗</a></div></div>
+    <div class="pc2 rv d2" data-cat="nlp">
+      <div class="ph"><span class="pi">📄</span><div class="pls"><a href="https://github.com/adikarthikeya2003/ATS_resume_project" target="_blank" class="pl">↗</a></div></div>
       <div class="pn">ATS Resume Optimization Tool</div>
       <p class="pd">NLP-based ATS scoring engine using SBERT and TF-IDF for real-time resume-JD analysis (under 0.3s inference). Improved resume–JD alignment by 18.35% and doubled matched skill coverage.</p>
       <div class="pst"><span class="ptg">SBERT</span><span class="ptg">TF-IDF</span><span class="ptg">FastAPI</span><span class="ptg">NLP</span></div>
     </div>
-    <div class="pc2 rv d2" data-cat="ml">
-      <div class="ph"><span class="pi">📁</span><div class="pls"><a href="https://github.com/adikarthikeya2003" target="_blank" class="pl">↗</a></div></div>
+    <div class="pc2 rv" data-cat="ml">
+      <div class="ph"><span class="pi">🗺️</span><div class="pls"></div></div>
       <div class="pn">NSF Geological Facies Classification</div>
       <p class="pd">ML pipeline using PCA, Random Forest, and XGBoost for geological facies classification on 50K+ subsurface samples. Achieved 80.24% accuracy with Tableau + QGIS dashboards for NSF stakeholders.</p>
       <div class="pst"><span class="ptg">XGBoost</span><span class="ptg">PCA</span><span class="ptg">Tableau</span><span class="ptg">QGIS</span><span class="ptg">scikit-learn</span></div>
@@ -406,11 +380,11 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
   <div class="sh rv"><span class="num">04.</span><h2>Technical Skills</h2><hr></div>
   <div class="skgrid">
     <div class="skb rv"><div class="skh">💻 Languages</div><div class="stags"><span class="stag">Python</span><span class="stag">SQL</span><span class="stag">R</span><span class="stag">JavaScript</span><span class="stag">C++</span></div></div>
-    <div class="skb rv d1"><div class="skh">🤖 ML & AI</div><div class="stags"><span class="stag">scikit-learn</span><span class="stag">PyTorch</span><span class="stag">TensorFlow</span><span class="stag">HuggingFace</span><span class="stag">XGBoost</span><span class="stag">LightGBM</span></div></div>
-    <div class="skb rv d2"><div class="skh">🧠 NLP & LLMs</div><div class="stags"><span class="stag">BERT/GPT</span><span class="stag">SBERT</span><span class="stag">LangChain</span><span class="stag">RAG</span><span class="stag">Prompt Eng.</span><span class="stag">Fine-tuning</span></div></div>
+    <div class="skb rv d1"><div class="skh">🤖 ML & AI</div><div class="stags"><span class="stag">scikit-learn</span><span class="stag">PyTorch</span><span class="stag">TensorFlow</span><span class="stag">HuggingFace</span><span class="stag">XGBoost</span><span class="stag">LightGBM</span><span class="stag">SHAP</span><span class="stag">MLflow</span></div></div>
+    <div class="skb rv d2"><div class="skh">🧠 NLP & LLMs</div><div class="stags"><span class="stag">LangChain</span><span class="stag">LangGraph</span><span class="stag">RAG</span><span class="stag">Google ADK</span><span class="stag">Gemini</span><span class="stag">Claude</span><span class="stag">OpenAI</span><span class="stag">SBERT</span><span class="stag">BERT/GPT</span><span class="stag">Prompt Eng.</span><span class="stag">Fine-tuning</span></div></div>
     <div class="skb rv"><div class="skh">📊 Data & Viz</div><div class="stags"><span class="stag">pandas</span><span class="stag">NumPy</span><span class="stag">Tableau</span><span class="stag">Power BI</span><span class="stag">Matplotlib</span><span class="stag">QGIS</span></div></div>
-    <div class="skb rv d1"><div class="skh">☁️ Cloud & MLOps</div><div class="stags"><span class="stag">GCP</span><span class="stag">AWS</span><span class="stag">Docker</span><span class="stag">MLflow</span><span class="stag">CI/CD</span><span class="stag">Git/GitHub</span></div></div>
-    <div class="skb rv d2"><div class="skh">🗄️ Databases & APIs</div><div class="stags"><span class="stag">PostgreSQL</span><span class="stag">MySQL</span><span class="stag">MongoDB</span><span class="stag">FastAPI</span><span class="stag">Flask</span><span class="stag">Streamlit</span></div></div>
+    <div class="skb rv d1"><div class="skh">☁️ Cloud & MLOps</div><div class="stags"><span class="stag">GCP</span><span class="stag">Cloud Run</span><span class="stag">Vertex AI</span><span class="stag">AWS</span><span class="stag">Azure Data Lake</span><span class="stag">Databricks</span><span class="stag">Docker</span><span class="stag">CI/CD</span><span class="stag">Git/GitHub</span><span class="stag">Linux</span></div></div>
+    <div class="skb rv d2"><div class="skh">🗄️ Databases & APIs</div><div class="stags"><span class="stag">PostgreSQL</span><span class="stag">MySQL</span><span class="stag">SQL Server</span><span class="stag">BigQuery</span><span class="stag">MongoDB</span><span class="stag">ChromaDB</span><span class="stag">Neo4j</span><span class="stag">FastAPI</span><span class="stag">Flask</span><span class="stag">REST APIs</span><span class="stag">Streamlit</span></div></div>
   </div>
 </section>
 
@@ -428,7 +402,7 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
       <div class="edeg">🏛️ B.Tech in Electronics &amp; Communication Engineering</div>
       <div class="euni">Amrita Vishwa Vidyapeetham — Bengaluru, India</div>
       <div class="emeta">Aug 2020 – Jun 2024 &nbsp;|&nbsp; GPA: 3.50 / 4.00</div>
-      <div class="ebody">Foundation in signal processing, embedded systems, and mathematics — bridged into ML and data science during senior year.</div>
+      <div class="ebody">Foundation in signal processing, embedded systems, and mathematics, bridged into ML and data science during senior year.</div>
     </div>
   </div>
 </section>
@@ -444,66 +418,12 @@ footer{padding:28px 72px;border-top:1px solid var(--border);display:flex;justify
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="sh rv"><span class="num">07.</span><h2>Certifications</h2><hr></div>
-  <div class="crtg">
-    <div class="crtc rv"><div class="crti">🤖</div><div><div class="crtn">Google Cloud Professional ML Engineer</div><div class="crtby">Google Cloud · Add year</div></div></div>
-    <div class="crtc rv d1"><div class="crti">📊</div><div><div class="crtn">TensorFlow Developer Certificate</div><div class="crtby">TensorFlow / Google · Add year</div></div></div>
-    <div class="crtc rv d2"><div class="crti">☁️</div><div><div class="crtn">AWS Certified Cloud Practitioner</div><div class="crtby">Amazon Web Services · Add year</div></div></div>
-    <div class="crtc rv"><div class="crti">🧠</div><div><div class="crtn">Deep Learning Specialization</div><div class="crtby">Coursera / deeplearning.ai · Add year</div></div></div>
-  </div>
-  <p class="note">⚠️ Replace placeholder certifications with your actual ones. Remove this line after updating.</p>
-</section>
-
-<!-- BLOG -->
-<section id="blog">
-  <div class="sh rv"><span class="num">08.</span><h2>Blog &amp; Writing</h2><hr></div>
-  <div class="blgg">
-    <a href="#" class="blgc rv">
-      <div class="blgcat">LLM / RAG</div>
-      <div class="blgt">Why My RAG System Returned Garbage Until I Switched Embedding Models</div>
-      <p class="blge">A deep dive into SBERT vs OpenAI ada vs bge-large, and the one metric that finally told me which to ship.</p>
-      <div class="blgf"><span>Coming soon</span><span>Apr 2026</span></div>
-    </a>
-    <a href="#" class="blgc rv d1">
-      <div class="blgcat">Agentic AI</div>
-      <div class="blgt">What 4th Place at ODSC Taught Me About Building Agentic Systems</div>
-      <p class="blge">Deterministic stage-based workflows vs. pure LLM agents — what actually holds up in production and why we chose Google ADK.</p>
-      <div class="blgf"><span>Coming soon</span><span>Apr 2026</span></div>
-    </a>
-    <a href="#" class="blgc rv d2">
-      <div class="blgcat">Machine Learning</div>
-      <div class="blgt">XGBoost vs LightGBM on Imbalanced Data: A Real-World Head-to-Head</div>
-      <p class="blge">50K records, SHAP explainability, and why AUC-ROC alone isn't enough to trust a churn model in production.</p>
-      <div class="blgf"><span>Coming soon</span><span>May 2026</span></div>
-    </a>
-  </div>
-  <p class="note">📝 Replace "Coming soon" with your actual Medium, Substack, or LinkedIn article links.</p>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="sh rv"><span class="num">09.</span><h2>Testimonials</h2><hr></div>
-  <div class="tsg">
-    <div class="tsc rv">
-      <p class="tsq">Add a recommendation from your NSF supervisor, UH professor, or ODSC teammate here. LinkedIn → Recommendations → Request one, takes 3 minutes and adds real credibility to a hiring manager.</p>
-      <div class="tsp"><div class="tsav">?</div><div><div class="tsn">Professor / Supervisor</div><div class="tsr">Role · University / Company</div></div></div>
-    </div>
-    <div class="tsc rv d1">
-      <p class="tsq">A short quote from a peer or hackathon teammate who has seen your work directly is worth more than most portfolio items.</p>
-      <div class="tsp"><div class="tsav">?</div><div><div class="tsn">Peer / Teammate</div><div class="tsr">Role · Company</div></div></div>
-    </div>
-  </div>
-  <p class="note">⚠️ Replace with real quotes from LinkedIn recommendations or direct permission. Remove this line after updating.</p>
-</section>
-
 <!-- CONTACT -->
 <section id="contact">
   <div class="ci rv">
-    <div class="clabel">10. What's Next?</div>
+    <div class="clabel">07. What's Next?</div>
     <h2 class="ch">Let's Work<br>Together.</h2>
-    <p class="cp">Actively seeking full-time roles as a Data Scientist, Data Analyst, or AI/ML Engineer. Whether you have an opportunity, a project, or just want to talk ML — inbox always open.</p>
+    <p class="cp">Actively seeking full-time roles as a Data Scientist, Data Analyst, or AI/ML Engineer. Whether you have an opportunity, a project, or just want to talk ML, inbox always open.</p>
     <div class="clinks">
       <a href="mailto:adikarthikeya1234@gmail.com" class="cl p">✉️ Say Hello</a>
       <a href="https://linkedin.com/in/adikarthikeya" target="_blank" class="cl">in LinkedIn</a>
