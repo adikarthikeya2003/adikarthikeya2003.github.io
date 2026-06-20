@@ -315,6 +315,7 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:60px}
       <button class="f-btn" data-f="ml">Machine Learning</button>
       <button class="f-btn" data-f="nlp">NLP &amp; LLMs</button>
       <button class="f-btn" data-f="data">Data Analytics</button>
+      <button class="f-btn" data-f="fullstack">Full-Stack</button>
     </div>
     <div class="p-grid" id="pGrid">
 
@@ -383,6 +384,22 @@ footer{border-top:1px solid var(--line);padding:22px 0;margin-top:60px}
         <div class="p-stack"><span>XGBoost</span><span>PCA</span><span>scikit-learn</span><span>Tableau</span><span>QGIS</span></div>
       </article>
 
+      <article class="p-card rv d2" data-cat="ml">
+        <div class="p-top"><span class="p-cat">ML · Analytics</span><div class="p-links"><a href="https://github.com/adikarthikeya2003/tinder-match-predictor" target="_blank" rel="noopener" aria-label="Tinder Match Predictor on GitHub">code ↗</a></div></div>
+        <h3 class="p-name">Tinder Match Predictor</h3>
+        <p class="p-impact">84.03% accuracy · 59,944 real OKCupid profiles · SHAP-explained</p>
+        <p class="p-desc">End-to-end ML pipeline predicting dating compatibility via LightGBM, XGBoost, and a stacking ensemble. K-Means persona clustering (k=5), VADER bio sentiment analysis, and a 7-page Streamlit dashboard with a live dual-profile match engine and profile optimizer.</p>
+        <div class="p-stack"><span>LightGBM</span><span>XGBoost</span><span>scikit-learn</span><span>SHAP</span><span>K-Means</span><span>VADER</span><span>Streamlit</span><span>Plotly</span></div>
+      </article>
+
+      <article class="p-card rv" data-cat="fullstack">
+        <div class="p-top"><span class="p-cat">Full-Stack · PWA</span><div class="p-links"><a href="https://github.com/adikarthikeya2003/ride-fare-india" target="_blank" rel="noopener" aria-label="RideFare India on GitHub">code ↗</a><a href="https://adikarthikeya2003.github.io/ride-fare-india" target="_blank" rel="noopener" aria-label="RideFare India live demo">live ↗</a></div></div>
+        <h3 class="p-name">RideFare India</h3>
+        <p class="p-impact">5 platforms · 6 cities · live weather surge · installable PWA</p>
+        <p class="p-desc">Full-stack PWA comparing Uber, Ola, Rapido, Namma Yatri &amp; inDrive fares in real time across 6 Indian cities. Integrates live weather via Open-Meteo, IST time-based surge pricing, event detection, and OpenStreetMap pin-drop geocoding with OSRM routing. Installable on iOS and Android.</p>
+        <div class="p-stack"><span>React 18</span><span>Vite</span><span>Tailwind CSS</span><span>Leaflet</span><span>FastAPI</span><span>Python</span><span>PWA</span><span>Open-Meteo</span></div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -446,7 +463,7 @@ else{
 var trace=document.getElementById('trace');
 var lines=[
   ['tm','$ adi.run --mode=overview'],
-  ['','<span class="tg">[plan]</span>     <span class="tw2">load profile · 3 roles · 8 projects · 1 hackathon podium</span>'],
+  ['','<span class="tg">[plan]</span>     <span class="tw2">load profile · 3 roles · 10 projects · 1 hackathon podium</span>'],
   ['','<span class="tv">[retrieve]</span> <span class="tw2">RareDx: Top-1 accuracy 10% → 92.5% · Recall@5 → 100%</span>'],
   ['','<span class="tv">[deploy]</span>   <span class="tw2">ShopperAI → GCP Cloud Run · ranked 4th/~200 (ODSC × Google)</span>'],
   ['','<span class="tg">[pipeline]</span> <span class="tw2">1M+ records → Azure Data Lake · runtime −60%</span>'],
